@@ -21,13 +21,14 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
 
+      // .replace(/id=".*?"/g, "")
       const newText = text
         .replace(/[\r\n]/g, "")
         .replace(/<\?xml.*\?>/, "")
         .replace(/<!--.*?-->/g, "")
         .replace(/<title>.*?<\/title>/g, "")
         .replace(/<desc>.*?<\/desc>/g, "")
-        .replace(/id=".*?"/g, "")
+        .replace(/id="[\u4e00-\u9fa5]+"/g, "")
         .replace(/<svg/, '<svg fill="currentColor"')
         .replace(/>\s+</g, "><");
       editor.edit((editBuilder) => {
