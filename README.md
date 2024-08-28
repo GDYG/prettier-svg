@@ -1,0 +1,2 @@
+# prettier-svg
+prettier svg
