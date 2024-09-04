@@ -2,7 +2,7 @@
   "name": "beautifySvg",
   "displayName": "Prettier Svg",
   "description": "prettier and compress svg",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "author": {
     "name": "GDYG",
     "email": "gdyg01@gmail.com"
@@ -38,7 +38,7 @@
       "editor/context": [
         {
           "command": "beautifySvg.prettierSvg",
-          "when": "editorLangId == svg && editorHasSelection && !editorReadonly",
+          "when": "editorHasSelection && !editorReadonly",
           "group": "navigation"
         }
       ]
@@ -47,7 +47,7 @@
       {
         "command": "beautifySvg.prettierSvg",
         "key": "ctrl+alt+g",
-        "when": "editorLangId == svg && editorHasSelection && !editorReadonly",
+        "when": "editorHasSelection && !editorReadonly",
         "mac": "cmd+alt+g"
       }
     ]

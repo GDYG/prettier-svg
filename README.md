@@ -56,7 +56,7 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 ## Release Notes
 
-### 0.0.2
+### 0.0.4
 
 - Initial release of Prettier SVG.
 - Beautify SVG code by removing unwanted attributes, compressing them into a single line, and adding superficially parent style attributes to the outer layer.
