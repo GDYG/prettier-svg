@@ -2,7 +2,7 @@
   "name": "beautifySvg",
   "displayName": "Prettier Svg",
   "description": "prettier and compress svg",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
     "name": "GDYG",
     "email": "gdyg01@gmail.com"
